@@ -7,8 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="login")
-public class Admin {
+@Table(name="Student_login")
+public class StudentLogin {
 	
 	@Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -17,12 +17,12 @@ public class Admin {
     private String password;
 
     
-public Admin()
+public StudentLogin()
  {
 		
 }
 
-public Admin(Long id, String username, String password) {
+public StudentLogin(Long id, String username, String password) {
 		
 		this.id = id;
 		this.username = username;
